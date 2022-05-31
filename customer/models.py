@@ -10,7 +10,7 @@ class Profile(models.Model):
     location = models.CharField(max_length=100, null=True, blank=True)
     username = models.CharField(max_length=200, null=True, blank=True)
     interests = models.ManyToManyField(Tag, blank=True)
-    gender = models.CharField(max_length=30, blank=True, default="None")
+    gender = models.CharField(max_length=100, blank=True, default="None")
     
 
     def __str__(self):
