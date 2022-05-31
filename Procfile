@@ -1,0 +1,1 @@
+web: gunicorn megacrm.wsgi --log-file -
